@@ -1,0 +1,138 @@
+@media all and (max-width: $screen-xs-max) {
+
+body {
+  line-height: 26px;
+}
+h2 {
+  color: #000;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h1.slogen {
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 600;
+  span {
+    font-size: 21px;
+    font-weight: 200;
+  }
+}
+.container p {
+  line-height: 26px;
+  letter-spacing: 1.25px;
+}
+.container-header {
+  height: $section-header-height-mobile;
+  position: relative;
+  margin-bottom: 95px;
+  h2 {
+    letter-spacing: 0.8px;
+    position: absolute;
+    bottom: -50px;
+    margin: 0;
+  }
+}
+.container-body {
+  
+  h3 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 25px;
+    line-height: 28px;
+    letter-spacing: 1.25px;
+  }
+}
+
+/*.navbar-default .navbar-nav {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: #000;
+  margin: 0;
+  padding: 30px 0;
+  & > li > a {
+    font-size: 15px;
+    line-height: 70px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    padding-left: 30px;
+    &, &:visited, &:active, &:hover {
+      color: #fff;
+    }
+  }
+}*/
+
+#intro {
+  &, & > .row, & > .row > .container {
+    height: 100%;
+  }
+  .slogen {
+    position: relative;
+    margin: 0;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+}
+#introduction-container {
+  #introduction-image {
+    height: 250px;
+    margin: 30px -15px 20px;
+  }
+  p {
+    margin-bottom: 45px;
+  }
+}
+#services-container {
+  .container-body {
+    h3 {
+      margin: 40px 0 45px;
+    }
+    p {
+      margin-bottom: 90px;
+    }
+  }
+}
+#prices-container .container-body .row {
+  margin-bottom: 50px;
+}
+#contact-container {
+  .container-body  {
+    ul.info li + li {
+      margin-top: 30px;
+    }
+    .colleagues {
+      margin-top: 40px;
+    }
+    .colleague {
+      margin-bottom: 40px;
+    }
+  }
+}
+#map {
+  height: 100%;
+  span.map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('https://maps.googleapis.com/maps/api/staticmap?center=47.420331,19.06786&zoom=17&maptype=terrain&size=320x370&scale=2&markers=color:gray%7C47.420331,19.06786&key=AIzaSyB7DXtl_u4FFPHWWr8GDHdJnnhF7m9tO7A&style=feature:poi|visibility:off&style=saturation:-100') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#footer {
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  letter-spacing: 1.8px;
+  #copyright {
+    font-size: 7px;
+    letter-spacing: 1.3px;
+  }
+}
+
+}

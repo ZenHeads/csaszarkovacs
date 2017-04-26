@@ -1,6 +1,9 @@
-@import 'bootstrap';
+$section-header-height-mobile:      175px !default;
 
-body {
-  padding-top: 70px;
-  background: gray;
-}
+
+@import 'bootstrap';
+@import 'style_common';
+@import 'style_xs';
+@import 'style_xs_sm';
+@import 'style_sm';
+@import 'style_md_lg';
