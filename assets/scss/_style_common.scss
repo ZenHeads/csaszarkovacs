@@ -1,22 +1,13 @@
-html, body {
-  height: 100%;
-}
-
-body {
-  padding-top: $navbar-height;
-}
-
 body > .anchor {
   display: block;
-  height: $navbar-height;
-  margin-top: -($navbar-height);
   visibility: hidden;
 }
-
-
 h2 {
   color: #000;
   font-weight: 600;
+}
+p {
+  margin: 0;
 }
 
 ul {
@@ -24,67 +15,101 @@ ul {
   padding: 0;
   margin: 0;
 }
+.semibold {
+  font-weight: 600;
+}
 .bold {
   font-weight: 700;
 }
-.dark-bg {
-  background-color: rgba(3, 5, 11, 0.83);
+
+body > .container-fluid > .container-header,
+#intro {
+  background-position: center;
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
 }
 
 #intro {
+  &, & > .row, & > .row > .container {
+    position: relative;
+  }
+  .slogen {
+    position: relative;
+    margin: 0;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
   .scroll-down {
     position: absolute;
-    bottom: 40px;
     .triangle {
       display: block;
-      border-color: #fff;
-      border-style: solid;
-      border-width: 0 2px 2px 0;
-      width: 10px;
-      height: 10px;
-      transform: rotate(45deg);
-      margin-left: -5px;
+      background: url('../img/arrow_down.svg') no-repeat center transparent;
+      background-size: cover;
     }
   }
 }
 #introduction-container {
   #introduction-image {
     padding: 0;
-    background: rgba(0,0,0,.6);
-    img {
-      
-    }
+    background-size: cover;
+    background-position: center top;
+    background-color: lightgray;
   }
 }
 #services-container {
   .container-body {
-    img {
+    .services-icon>span {
       display: block;
       margin: 0 auto;
-      width: 160px;
-      height: 170px;
+      background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
-  }
-}
-#contact-container {
-  
-  .colleague-image {
-    margin-bottom: 30px;
-    &:after {
-      display: block;
-      content: 'image-placeholder';
-      width: 104px;
-      height: 113px;
-      background: rgba(30,30,30,.6);
-      border-radius: 10px;
+    #services-icon-1 {
+      background-image: url('../img/CSK_icon_konyveles.svg');
     }
-  }
-  .container-footer {
-    
+    #services-icon-2 {
+      background-image: url('../img/CSK_icon_berszam.svg');
+    }
+    #services-icon-3 {
+      background-image: url('../img/CSK_icon_ado.svg');
+    }
   }
 }
 
+#contact-container {
+  .colleague-image {
+    width: 104px;
+    height: 113px;
+    display: block;
+    margin-bottom: 30px;
+    background-color: transparent;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #fb-link > a:before {
+    display: inline-block;
+    content: 'f';
+    color: #000;
+    margin-right: 15px;
+    font-weight: 700;
+  }
+}
+#map {
+  span.map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    background-size: cover;
+  }
+}
 
 #footer {
   background-color: #03050b;

@@ -1,8 +1,18 @@
+$section-header-height-mobile:      175px !default;
+
 @media all and (max-width: $screen-xs-max) {
 
-body {
-  line-height: 26px;
+html, body {
+  height: 100%;
 }
+body {
+  padding-top: $navbar-height;
+}
+body > .anchor {
+  height: $navbar-height;
+  margin-top: -($navbar-height);
+}
+
 h2 {
   color: #000;
   font-size: 20px;
@@ -18,8 +28,10 @@ h1.slogen {
     font-weight: 200;
   }
 }
+.semibold-xs {
+  font-weight: 600;
+}
 .container p {
-  line-height: 26px;
   letter-spacing: 1.25px;
 }
 .container-header {
@@ -34,7 +46,6 @@ h1.slogen {
   }
 }
 .container-body {
-  
   h3 {
     text-align: center;
     margin: 10px 0 20px 0;
@@ -43,6 +54,7 @@ h1.slogen {
     letter-spacing: 1.25px;
   }
 }
+
 
 /*.navbar-default .navbar-nav {
   position: fixed;
@@ -66,26 +78,33 @@ h1.slogen {
 }*/
 
 #intro {
+  background-image: url('../img/_mobile/mobile_img_01.png');
   &, & > .row, & > .row > .container {
     height: 100%;
   }
-  .slogen {
-    position: relative;
-    margin: 0;
-    top: 40%;
-    transform: translate(0, -50%);
+  .scroll-down {
+    bottom: 40px;
+    .triangle {
+      width: 38px;
+      height: 19px;
+      margin-left: -19px;
+    }
   }
 }
 #introduction-container {
   #introduction-image {
     height: 250px;
-    margin: 30px -15px 20px;
+    margin: 30px 0 20px;
+    background-image: url('../img/_mobile/mobile_img_02.png');
   }
   p {
     margin-bottom: 45px;
   }
 }
 #services-container {
+  .container-header {
+    background-image: url('../img/_mobile/mobile_img_03.png');
+  }
   .container-body {
     h3 {
       margin: 40px 0 45px;
@@ -93,12 +112,30 @@ h1.slogen {
     p {
       margin-bottom: 90px;
     }
+    .services-icon>span{
+      width: 85px;
+      height: 88px;
+    }
   }
 }
-#prices-container .container-body .row {
-  margin-bottom: 50px;
+#prices-container {
+  .container-header {
+    background-image: url('../img/_mobile/mobile_img_04.png');
+  }
+  .container-body .row {
+    margin-bottom: 50px;
+  }
 }
 #contact-container {
+  .container-header {
+    background-image: url('../img/_mobile/mobile_img_05.png');
+  }
+  #colleague-1 {
+    background-image: url('../img/_mobile/mobile_img_06.png');
+  }
+  #colleague-2 {
+    background-image: url('../img/_mobile/mobile_img_07.png');
+  }
   .container-body  {
     ul.info li + li {
       margin-top: 30px;
@@ -113,13 +150,9 @@ h1.slogen {
 }
 #map {
   height: 100%;
+  max-height: 450px;
   span.map {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url('https://maps.googleapis.com/maps/api/staticmap?center=47.420331,19.06786&zoom=17&maptype=terrain&size=320x370&scale=2&markers=color:gray%7C47.420331,19.06786&key=AIzaSyB7DXtl_u4FFPHWWr8GDHdJnnhF7m9tO7A&style=feature:poi|visibility:off&style=saturation:-100') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('../img/_mobile/staticmap.png');
   }
 }
 

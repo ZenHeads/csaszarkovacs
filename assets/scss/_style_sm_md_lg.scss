@@ -1,0 +1,130 @@
+$tablet-navbar-height:       95px !default;
+
+@media all and (min-width: $screen-sm-min) {
+
+body > .anchor {
+  height: $tablet-navbar-height;
+  margin-top: -($tablet-navbar-height);
+}
+.navbar {
+  min-height: $tablet-navbar-height;
+}
+.navbar-brand {
+  height: $tablet-navbar-height;
+  padding: 37px 15px;
+}
+.navbar-nav>li {
+  padding: 0 15px;
+}
+.navbar-nav>li>a {
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 21px;
+  padding: 37px 0;
+}
+.navbar-nav>li>a {
+  position: relative;
+  
+  &:before {
+    display: block;
+    content: '';
+    border-bottom: 5px solid #000;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    top: -5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  &.active:before {
+    transform: scaleX(1);
+  }
+}
+
+.container-header {
+  position: relative;
+  h2 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    position: absolute;
+    bottom: 60px;
+    margin: 0;
+    color: #fff;
+  }
+}
+.container-body {
+  h3 {
+    font-weight: 400;
+    margin: 15px 0 10px 0;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 1.7px;
+  }
+}
+#intro {
+  &, & > .row, & > .row > .container {
+    height: 570px;
+  }
+  .scroll-down {
+    bottom: 95px;
+    .triangle {
+      width: 26px;
+      height: 13px;
+      margin-left: -13px;
+    }
+  }
+}
+#introduction-container {
+  h2 {
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+  #introduction-image {
+    margin: 0;
+    float: right !important;
+  }
+}
+#services-container {
+  .container-body {
+    h3 {
+      margin: 15px 0 20px;
+    }
+    .services-icon.right {
+      float: right !important;
+    }
+    .services-icon>span{
+      width: 125px;
+      height: 140px;
+    }
+  }
+}
+
+#map {
+  height: 500px;
+}
+#footer>.container {
+  font-size: 11px;
+  line-height: 12px;
+  padding-top: 45px;
+  padding-bottom: 44px;
+  letter-spacing: 1px;
+  ul>li {
+    display: inline-block;
+    & + li {
+      margin-left: 15px;
+    }
+  }
+  #copyright {
+    float: left;
+    margin: 0;
+    &:after {
+      display: inline-block;
+      content: '\00a0';
+    }
+  }
+}
+
+}
