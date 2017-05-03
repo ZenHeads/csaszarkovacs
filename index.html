@@ -37,7 +37,7 @@
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#csk-navbar-collapse" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" id="menu-toggle">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -49,7 +49,7 @@
 	    </div>
 	
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="csk-navbar-collapse">
+	    <div class="sidebar" id="csk-sidebar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a class="scroll-link" href="#introduction">Bemutatkozás</a></li>
 	        <li><a class="scroll-link" href="#services">Szolgáltatások</a></li>
@@ -271,12 +271,11 @@
     $('a.scroll-link').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
-        
+        $("#csk-sidebar").removeClass("toggled");
         $('.navbar-nav>li>a').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
-      
         var target = this.hash;
         $target = $(target);
         $('html, body').stop().animate({
@@ -286,7 +285,6 @@
         });
     });
 	});
-	
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop() + $('.navbar-nav').outerHeight();
 	    $('.navbar-nav>li>a').each(function () {
@@ -302,6 +300,10 @@
 	        }
 	    });
 	}
+	$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#csk-sidebar").toggleClass("toggled");
+});
   </script>
 </body>
 </html>
