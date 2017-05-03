@@ -1,0 +1,19 @@
+$facebook_icon_url:             url('../img/facebook_icon.svg') !default;
+$linkedin_icon_url:             url('../img/linkedin_icon.svg') !default;
+
+$social_media_icon_url:         $facebook_icon_url !default;
+
+
+#social-media-link > a:before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: '';
+  margin-right: 0.5em;
+  margin-bottom: -2px;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: $social_media_icon_url;
+}
