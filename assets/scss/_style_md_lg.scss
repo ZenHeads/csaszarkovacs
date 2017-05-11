@@ -1,4 +1,4 @@
-$section-header-height-desktop:        350px !default;
+$section-header-height-desktop:        300px !default;
 
 @media all and (min-width: $screen-md-min) {
 
@@ -16,6 +16,9 @@ h1.slogen {
 }
 .container-header {
   height: $section-header-height-desktop;
+  h2 {
+    bottom: 60px;
+  }
 }
 #intro {
   background-image: url('../img/_desktop/desktop_img_01.png');
@@ -51,9 +54,6 @@ h1.slogen {
       margin-top: 20px;
       &:first-child {
         margin-bottom: 80px;
-      }
-      &:last-child {
-        margin-top: 80px;
       }
      }
   }

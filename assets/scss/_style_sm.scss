@@ -1,4 +1,4 @@
-$section-header-height-tablet:        250px !default;
+$section-header-height-tablet:        200px !default;
 
 @media all and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   
@@ -16,6 +16,9 @@ h1.slogen {
 }
 .container-header {
   height: $section-header-height-tablet;
+  h2 {
+    bottom: 45px;
+  }
 }
 
 #intro {

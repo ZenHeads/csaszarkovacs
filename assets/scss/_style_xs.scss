@@ -1,4 +1,4 @@
-$section-header-height-mobile:      175px !default;
+$section-header-height-mobile:      150px !default;
 
 @media all and (max-width: $screen-xs-max) {
 
@@ -36,13 +36,10 @@ h1.slogen {
 }
 .container-header {
   height: $section-header-height-mobile;
-  position: relative;
-  margin-bottom: 95px;
+  margin-bottom: 50px;
   h2 {
     letter-spacing: 0.8px;
-    position: absolute;
-    bottom: -50px;
-    margin: 0;
+    bottom: 35px;
   }
 }
 .container-body {

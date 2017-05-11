@@ -46,16 +46,10 @@ body > .anchor {
 }
 
 .container-header {
-  position: relative;
   h2 {
-    font-weight: 400;
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 0.7px;
-    position: absolute;
-    bottom: 60px;
-    margin: 0;
-    color: #fff;
   }
 }
 .container-body {
@@ -104,7 +98,15 @@ body > .anchor {
     }
   }
 }
-
+#prices-container {
+  .container-body {
+    .row {
+      &:last-child {
+        margin-top: 80px;
+      }
+     }
+  }
+}
 #map {
   height: 500px;
 }
