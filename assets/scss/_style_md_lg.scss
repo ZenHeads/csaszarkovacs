@@ -55,7 +55,10 @@ h1.slogen {
       &:first-child {
         margin-bottom: 80px;
       }
-     }
+      &.small {
+        margin-top: 50px;
+      }
+    }
   }
 }
 #contact-container {
