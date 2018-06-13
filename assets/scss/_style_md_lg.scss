@@ -81,7 +81,11 @@ h1.slogen {
   #colleague-2 {
     background-image: url('../img/_desktop/desktop_img_07.png');
   }
+  .social-media-link.first {
+    margin-top: 4 * $font-size-base * $line-height-base;
+  }
 }
+
 #map {
   span.map {
     background-image: url('../img/_desktop/staticmap_v2.png');
