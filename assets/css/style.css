@@ -4634,7 +4634,7 @@ body > .container-fluid > .container-header,
 }
 /* line 110, ../scss/_style_common.scss */
 #contact-container .social-media-link.first {
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 /* line 115, ../scss/_style_common.scss */
@@ -5237,12 +5237,8 @@ body > .container-fluid > .container-header,
   #contact-container #colleague-2 {
     background-image: url("../img/_desktop/desktop_img_07.png");
   }
-  /* line 84, ../scss/_style_md_lg.scss */
-  #contact-container .social-media-link.first {
-    margin-top: 104px;
-  }
 
-  /* line 90, ../scss/_style_md_lg.scss */
+  /* line 87, ../scss/_style_md_lg.scss */
   #map span.map {
     background-image: url("../img/_desktop/staticmap_v2.png");
   }

@@ -108,7 +108,7 @@ body > .container-fluid > .container-header,
     background-repeat: no-repeat;
   }
   .social-media-link.first {
-    margin-top: 30px;
+    margin-top: $line-height-computed;
   }
 }
 #map {
