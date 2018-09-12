@@ -4743,7 +4743,7 @@ body > .container-fluid > .container-header,
   #introduction-container #introduction-image {
     height: 250px;
     margin: 30px 0 20px;
-    background-image: url("../img/_mobile/mobile_img_02.png");
+    background-image: url("../img/_mobile/mobile_introduction.jpg");
   }
   /* line 75, ../scss/_style_xs.scss */
   #introduction-container p {
@@ -4920,7 +4920,7 @@ body > .container-fluid > .container-header,
   /* line 30, ../scss/_style_sm.scss */
   #introduction-container #introduction-image {
     height: 510px;
-    background-image: url("../img/_tablet/tablet_img_02.png");
+    background-image: url("../img/_tablet/tablet_introduction.jpg");
   }
 
   /* line 36, ../scss/_style_sm.scss */
@@ -5173,7 +5173,7 @@ body > .container-fluid > .container-header,
   /* line 29, ../scss/_style_md_lg.scss */
   #introduction-container #introduction-image {
     height: 380px;
-    background-image: url("../img/_desktop/desktop_img_02.png");
+    background-image: url("../img/_desktop/desktop_introduction.jpg");
   }
 
   /* line 35, ../scss/_style_md_lg.scss */

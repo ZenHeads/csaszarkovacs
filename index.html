@@ -243,35 +243,19 @@
               <li>
                 <span class="bold">Császár és Kovács Könyvelő Iroda Kft.</span>
                 <br />
-                1214 Bp, Kossuth Lajos utca 136 Fszt 1.
+                1088 Budapest, Szentkirályi utca 3. II/14.
               </li>
-
-              <li class="social-media-link first"><a class="facebook" href="https://www.facebook.com/budapestikonyvelo/" target="_blank">Facebook</a></li>
-              <li class="social-media-link"><a class="linkedin" href="https://www.linkedin.com/company-beta/18067362/" target="_blank">LinkedIn</a></li>
-              <li class="social-media-link"><a class="twitter" href="https://twitter.com/csaszarkovacs" target="_blank">Twitter</a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-md-6 colleagues">
             <div class="row">
-              <div class="col-xs-12 col-sm-6 colleague">
-                <span id="colleague-1" class="colleague-image"></span>
-                <p class="bold">Császár Péter</p>
-                <ul>
-                  <li>Okleveles közgazdász</li>
-                  <li>Regisztrált mérlegképes könyvelő</li>
-                  <li>Adótanácsadó</li>
-                  <li>peter@csaszarpeter.hu</li>
-                  <li>+36 30 480 55 43</li>
-                </ul>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 colleague">
+              <div class="col-xs-12 col-md-6 col-md-offset-6 colleague">
                 <span id="colleague-2" class="colleague-image"></span>
                 <p class="bold">Kovács Balázs</p>
                 <ul>
                   <li>Okleveles közgazdász</li>
                   <li>Regisztrált mérlegképes könyvelő</li>
-                  <li>Adótanácsadó</li>
+                  <li>Nemzetközi adószakértő</li>
                   <li>balazs@csaszarkovacs.hu</li>
                   <li>+36 30 489 56 19</li>
                 </ul>
@@ -283,9 +267,9 @@
     </div>
   </div>
   <div id="map">
-    <a href="//www.google.com/maps/place/Cs%C3%A1sz%C3%A1r+%C3%A9s+Kov%C3%A1cs+K%C3%B6nyvel%C5%91+Iroda+Kft./@47.4203305,19.067313,19z/data=!4m8!1m2!3m1!2zQ3PDoXN6w6FyIMOpcyBLb3bDoWNzIEvDtm55dmVsxZEgSXJvZGEgS2Z0Lg!3m4!1s0x0:0x436ec964915e81dd!8m2!3d47.42033!4d19.0678599" target="_blank">
+    <!-- <a href="//www.google.hu/maps/place/Budapest,+Szentkir%C3%A1lyi+u.+3,+1088/@47.4947221,19.0623235,17z/data=!3m1!4b1!4m5!3m4!1s0x4741dc5d26b3afab:0x4949b705cba2616f!8m2!3d47.4947221!4d19.0645122" target="_blank">
       <span class="map"></span>
-    </a>
+    </a> -->
   </div>
 
 
@@ -295,7 +279,7 @@
     <div class="container">
       <ul>
         <li>Császár és Kovács Könyvelő Iroda Kft.</li>
-        <li>1214 Bp, Kossuth Lajos utca 136 Fszt 1</li>
+        <li>1088 Budapest, Szentkirályi utca 3. II/14.</li>
         <li id="copyright">Copyright© 2011 Minden jog fenntartva</li>
       </ul>
     </div>
@@ -307,6 +291,37 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <script type="text/javascript" src="assets/js/jquery.cookiebar.js"></script>
+  <script type="text/javascript">
+    function myMap() {
+      var place = new google.maps.LatLng(47.494560,19.064490);
+      var iconUrl = location.origin + '/WWW/csk-web/assets/img/marker.png';
+      // var iconUrl = '/assets/img/marker.png';
+      var mapOptions = {
+        center: place,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoom: 17,
+        streetViewControl: false,
+        mapTypeControl: false,
+        // fullscreenControl: false,
+        // zoomControl: false,
+        styles: [{
+            "elementType": "geometry",
+            "stylers": [{"saturation": -100}]
+          }, {
+            "featureType": "poi",
+            "elementType": "labels",
+            "stylers": [{ "visibility": "off" }]
+        }]
+      }
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      var marker = new google.maps.Marker({
+        icon: iconUrl,
+        position: place,
+        map: map
+      });
+    }
+  </script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB6-4wNbck4zYITgVklTBj84QzSUtQRNL8&callback=myMap"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $.cookieBar({
